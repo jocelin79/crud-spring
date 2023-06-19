@@ -24,6 +24,6 @@ public class CoursesController {
 
     @GetMapping
     public List<Course> list() {
-        return null;
+        return courseRepository.findAll();
     }
 }
